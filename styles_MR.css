@@ -1,0 +1,85 @@
+body {
+    background-color: #7aa2b1;
+}
+
+.nav-link {
+    color:#2e1619;
+    font-size: 20px;
+}
+
+.hero {
+    animation: backInLeft;
+    animation-duration: 2s;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.main {
+    display: flex;
+    height: 650px;
+}
+
+.heroText {
+    align-content: center;
+    padding-top: 120px;
+    animation: backInRight;
+    animation-duration: 2s;
+    padding-right: 30px;
+}
+
+.restaurantName {
+    font-size: 130px;
+    color:#2e1619;
+    font-family: 'Cherry Cream Soda', cursive;
+    text-align: center;
+}
+
+.about {
+    background-color: pink;
+    height: 500px;
+}
+
+.aboutUs {
+    display: flex;
+}
+
+.aboutUsBlurb h3 {
+    padding: 40px;
+    font-size: 20px;
+}
+
+.groupPhoto {
+    border-radius: 25px;
+}
+
+
+
+.sectionTitles {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu {
+    background-color: royalblue;
+    height: 500px;
+}
+
+.menuItems {
+    text-align: center;
+    width: 300px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+.findUs {
+    background-color: slategray;
+    height: 500px;
+}
+
