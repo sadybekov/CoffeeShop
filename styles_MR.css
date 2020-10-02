@@ -37,7 +37,7 @@ body {
 }
 
 .about {
-    background-color: pink;
+    background-color: #1f1f1f;
     height: 700px;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .menu {
-    background-color:green;
+    background-color: #1f1f1f;
     height: 700px;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 .findUs {
-    background-color: grey;
+    background-color: #1f1f1f;
     height: 500px;
 }
 
