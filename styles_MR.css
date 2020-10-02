@@ -5,6 +5,7 @@ body {
 .nav-link {
     color:#2e1619;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .hero {
@@ -37,7 +38,7 @@ body {
 
 .about {
     background-color: pink;
-    height: 500px;
+    height: 700px;
 }
 
 .aboutUs {
@@ -46,24 +47,25 @@ body {
 
 .aboutUsBlurb h3 {
     padding: 40px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-right: 50px;
 }
-
-.groupPhoto {
-    border-radius: 25px;
-}
-
-
 
 .sectionTitles {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: white;
+    text-transform: uppercase;
 }
 
 .menu {
-    background-color: royalblue;
-    height: 500px;
+    background-color:green;
+    height: 700px;
 }
 
 .menuItems {
@@ -76,10 +78,32 @@ body {
     align-content: center;
     width: 100%;
     font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-transform: uppercase;
 }
 
 .findUs {
-    background-color: slategray;
+    background-color: grey;
     height: 500px;
 }
 
+.findUsLocations {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly
+    
+}
+
+.card-text {
+    text-align: center;
+}
+
+.icons {
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    text-align: center;
+    margin-left: 150px;
+}
