@@ -106,4 +106,7 @@ body {
     padding: 50px;
     text-align: center;
     margin-left: 150px;
+    filter: invert(49%) sepia(73%) saturate(3294%) hue-rotate(163deg) brightness(97%) contrast(101%);
+
+
 }
