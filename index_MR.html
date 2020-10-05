@@ -1,122 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href ="styles_MR.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="styles_MR.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index_IS.css">
+  <title>Cafe Piaggio</title>
 </head>
 
-    <header> 
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="#AboutUs">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#FindUs">Find Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ContactUs">Contact</a>
-            </li>
-          </ul>
-    </header>
 
-    <div class = "main">
-      <div class ="hero">
-        <img src ="HeroImage.png">
-      </div>
-      <div class = "heroText">
-        <h1 class = "restaurantName">Cafe Piaggio</h1>
+
+
+
+
+
+
+
+<header>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" href="#AboutUs">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Menu">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#btn btn-primary">
+        <div data-toggle="modal" data-target="#staticBackdrop">Order</div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#FindUs">Find Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#events">Events</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#ContactUs">Contact</a>
+    </li>
+  </ul>
+</header>
+
+<div class="main">
+  <div class="hero">
+    <img src="HeroImage.png">
+  </div>
+  <div class="heroText">
+    <h1 class="restaurantName">Cafe Piaggio</h1>
+  </div>
+</div>
+<div class='options'>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop" id='button'>
+    Order Now!
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formBackdrop" id='button'>
+    Reservations
+  </button>
+</div>
+<div class="about">
+  <h2 class="sectionTitles" id="AboutUs">About Us</h2>
+  <div class="aboutUs">
+    <div class="aboutUsBlurb">
+      <h3>Hello Calgary! We are a group of friends who wanted to start a
+        business together. We love coffee and we are passionate about
+        people. That is how Cafe Piaggio came to life. We use coffee as
+        a catalyst to create community. Find us and come to 'say hi' and
+        try our delicious brew.</h3>
+      <img class="icons" src="coffee-machine.svg">
+      <img class="icons" src="cupcake.svg">
+      <img class="icons" src="paper-cup.svg">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="menu">
+  <h2 class="sectionTitles" id="Menu">Menu</h2>
+  <ul class="menuItems">
+    <li>Espresso ........ $1.50</li>
+    <li>Americano ....... $2.25</li>
+    <li>Cafe Latte ....... $3.50</li>
+    <li>Cappucino ........ $3.00</li>
+    <li>Hot Chocolate ....... $2.50</li>
+    <li>Muffin ....... $1.50</li>
+    <li>Almond Croissant ........ $2.50</li>
+    <li>Chocolata Croissant ....... $2.50</li>
+  </ul>
+</div>
+
+<div class="findUs">
+  <h2 class="sectionTitles" id="FindUs">Find Us</h2>
+  <div class="findUsLocations">
+    <div class="card" style="width: 18rem;">
+      <img src="OlympicPlaza.png" class="card-img-top" alt="Olympic Plaza">
+      <div class="card-body">
+        <p class="card-text">Olympic Plaza</p>
+        <p class="card-text">228 8 Ave SE, T2P 2M5</p>
       </div>
     </div>
 
-    <div class= "about">
-      <h2 class="sectionTitles" id= "AboutUs" >About Us</h2>
-      <div class = "aboutUs">
-        <div class = "aboutUsBlurb">
-          <h3>Hello Calgary! We are a group of friends who wanted to start a 
-            business together. We love coffee and we are passionate about 
-            people. That is how Cafe Piaggio came to life. We use coffee as 
-            a catalyst to create community. Find us and come to 'say hi' and 
-            try our delicious brew.</h3>
-            <img class ="icons" src="coffee-machine.svg">
-            <img class ="icons"src="cupcake.svg">
-            <img class ="icons"src = "paper-cup.svg">
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="PeaceBridge.png" class="card-img-top" alt="Peace Bridge">
+      <div class="card-body">
+        <p class="card-text">Peace Bridge</p>
+        <p class="card-text">111 7 Ave SW, T3X 3M5</p>
       </div>
     </div>
 
-    <div class= "menu">
-      <h2 class="sectionTitles" id= "Menu">Menu</h2>
-        <ul class = "menuItems">
-          <li>Espresso ........ $1.50</li>
-          <li>Americano ....... $2.25</li>
-          <li>Cafe Latte ....... $3.50</li>
-          <li>Cappucino ........ $3.00</li>
-          <li>Hot Chocolate ....... $2.50</li>
-          <li>Muffin ....... $1.50</li>
-          <li>Almond Croissant ........ $2.50</li>
-          <li>Chocolata Croissant ....... $2.50</li>
-        </ul>
-    </div>
-
-    <div class= "findUs">
-      <h2 class="sectionTitles" id = "FindUs">Find Us</h2>
-      <div class = "findUsLocations">
-        <div class="card" style="width: 18rem;">
-          <img src="OlympicPlaza.png" class="card-img-top" alt="Olympic Plaza">
-          <div class="card-body">
-            <p class="card-text">Olympic Plaza</p>
-            <p class = "card-text">228 8 Ave SE, T2P 2M5</p>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <img src="PeaceBridge.png" class="card-img-top" alt="Peace Bridge">
-          <div class="card-body">
-            <p class="card-text">Peace Bridge</p>
-            <p class = "card-text">111 7 Ave SW, T3X 3M5</p>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <img src="CentralLibrary.jpg" class="card-img-top" alt="Central Library">
-          <div class="card-body">
-            <p class="card-text">Central Library</p>
-            <p class = "card-text">800 3 St SE, T2G 2E7</p>
-          </div>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="CentralLibrary.jpg" class="card-img-top" alt="Central Library">
+      <div class="card-body">
+        <p class="card-text">Central Library</p>
+        <p class="card-text">800 3 St SE, T2G 2E7</p>
       </div>
     </div>
+  </div>
+</div>
 
-    <footer>
-        <h2 class="sectionTitles" id = "ContactUs">Contact Us</h2>
-    </footer>
+<div class="events">
+  <h2 class="sectionTitles" id="events">Events</h2>
+  <div class="findUsLocations">
+    <iframe
+      src="https://calendar.google.com/calendar/embed?height=320&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FEdmonton&amp;src=YXRtcmY0cDVwdXVsa2h0NDFkYjBiZDJ1dTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23E67C73&amp;color=%23009688&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showNav=0&amp;showTitle=0&amp;showDate=1&amp;showTabs=0"
+      style="border:solid 1px #777" width="480" height="320" frameborder="0" scrolling="no"></iframe>
+  </div>
+</div>
+<footer>
+  <h2 class="sectionTitles" id="ContactUs">Contact Us</h2>
+</footer>
 
 <body>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-    crossorigin="anonymous"></script>
+  <!-- Menu CARD -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content menu_size menu_color" style="align-items: center;">
+
+        <!-- Header Kurt-->
+        <button type="button" class="close color_white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+
+        <div class="modal-header menu_color">
+          <img src="Piaggo.jpg" alt="..." class="img-fluid img-thumbnail logo_image">
+          <!-- <h5 class="modal-title" id="staticBackdropLabel">CAFE PIAGGO</h5> -->
+        </div>
+
+
+        <!-- Menu CARD Body -->
+        <!-- Navigation Bar Kurt-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link mx-4" href="#coffee" style="color: antiquewhite;">Coffee <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4" href="#pasteries" style="color: antiquewhite;">Pasteries</a>
+              </li>
+          </div>
+        </nav>
+        <!-- Content IS-->
+
+        <div class="modal-body">
+
+          <div class="container">
+
+            <!-- Line 1 -->
+            <div class="row">
+              <!-- product -->
+              <div class="col-sm mx-2 mt-4 mb-4">
+                <div class="row align-items-center product" id='coffee'>
+                  <img src="Americano.jpeg" class="img-fluid rounded-circle menu_image my-1" alt="Responsive image">
+                </div>
+                <!-- product name -->
+                <div class="row product color_white my-1">
+                  $ 1.50
+                </div>
+
+                <div class="row product color_white my-1">
+                  Espresso<span class="badge badge-pill badge-success mx-1" id='espresso'>0</span>
+                </div>
+                <!-- button -->
+                <div class="row product">
+                  <button onclick="addone('espresso')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>+</strong></button>
+                  <button onclick="subone('espresso')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>-</strong></button>
+                </div>
+              </div>
+
+              <!-- product -->
+              <div class="col-sm mx-2 mt-4 mb-4">
+                <div class="row align-items-center product">
+                  <img src="americano.webp" class="img-fluid rounded-circle menu_image my-1" alt="Responsive image">
+                </div>
+                <!-- product name -->
+                <div class="row product color_white my-1">
+                  $ 2.25
+                </div>
+
+                <div class="row product color_white my-1">
+                  Americano<span class="badge badge-pill badge-success mx-1" id="americano">0</span>
+                </div>
+                <!-- button -->
+                <div class="row product">
+                  <button onclick="addone('americano')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>+</strong></button>
+                  <button onclick="subone('americano')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>-</strong></button>
+                </div>
+              </div>
+
+              <!-- product -->
+              <div class="col-sm mx-2 mt-4 mb-4">
+                <div class="row align-items-center product">
+                  <img src="latte.jpg" class="img-fluid rounded-circle menu_image my-1" alt="Responsive image">
+                </div>
+                <!-- product name -->
+                <div class="row product color_white my-1">
+                  $ 2.25
+                </div>
+
+                <div class="row product color_white my-1">
+                  Cafe Latte<span class="badge badge-pill badge-success mx-1" id="latte">0</span>
+                </div>
+                <!-- button -->
+                <div class="row product">
+                  <button onclick="addone('latte')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>+</strong></button>
+                  <button onclick="subone('latte')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>-</strong></button>
+                </div>
+              </div>
+
+            </div>
+
+
+            <!-- Line 2 -->
+            <div class="row">
+              <!-- product -->
+              <div class="col-sm mx-2 mt-4 mb-4">
+                <div class="row align-items-center product">
+                  <img src="capi.jpg" class="img-fluid rounded-circle menu_image my-1" alt="Responsive image">
+                </div>
+                <!-- product name -->
+                <div class="row product color_white my-1">
+                  $ 3.00
+                </div>
+
+                <div class="row product color_white my-1">
+                  Cappucino<span class="badge badge-pill badge-success mx-1" id="cappucino">0</span>
+                </div>
+                <!-- button -->
+                <div class="row product">
+                  <button onclick="addone('cappucino')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>+</strong></button>
+                  <button onclick="subone('cappucino')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>-</strong></button>
+                </div>
+              </div>
+
+              <!-- product -->
+              <div class="col-sm mx-2 mt-4 mb-4">
+                <div class="row align-items-center product">
+                  <img src="hot.jpg" class="img-fluid rounded-circle menu_image my-1" alt="Responsive image">
+                </div>
+                <!-- product name -->
+                <div class="row product color_white my-1">
+                  $ 2.50
+                </div>
+
+                <div class="row product color_white my-1">
+                  Hot Chocolate<span class="badge badge-pill badge-success mx-1" id="hot">0</span>
+                </div>
+                <!-- button -->
+                <div class="row product">
+                  <button onclick="addone('hot')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>+</strong></button>
+                  <button onclick="subone('hot')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>-</strong></button>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- Line 3 -->
+            <div class="row">
+              <!-- product -->
+              <div class="col-sm mx-2 mt-4 mb-4">
+                <div class="row align-items-center product" id='pasteries' style='color: azure; font-size: 3rem;'>
+                  <img src="muffin.jpg" class="img-fluid rounded-circle menu_image my-1" alt="Responsive image">
+                </div>
+                <!-- product name -->
+                <div class="row product color_white my-1">
+                  $ 1.50
+                </div>
+
+                <div class="row product color_white my-1">
+                  Muffin<span class="badge badge-pill badge-success mx-1" id="muffin">0</span>
+                </div>
+                <!-- button -->
+                <div class="row product">
+                  <button onclick="addone('muffin')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>+</strong></button>
+                  <button onclick="subone('muffin')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>-</strong></button>
+                </div>
+              </div>
+
+              <!-- product -->
+              <div class="col-sm mx-2 mt-4 mb-4">
+                <div class="row align-items-center product">
+                  <img src="almond.jpg" class="img-fluid rounded-circle menu_image my-1" alt="Responsive image">
+                </div>
+                <!-- product name -->
+                <div class="row product color_white my-1">
+                  $ 2.50
+                </div>
+
+                <div class="row product color_white my-1">
+                  Almond Croissant<span class="badge badge-pill badge-success mx-1" id="almond">0</span>
+                </div>
+                <!-- button -->
+                <div class="row product">
+                  <button onclick="addone('almond')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>+</strong></button>
+                  <button onclick="subone('almond')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>-</strong></button>
+                </div>
+              </div>
+
+              <!-- product -->
+              <div class="col-sm mx-2 mt-4 mb-4">
+                <div class="row align-items-center product">
+                  <img src="chocolate.jpg" class="img-fluid rounded-circle menu_image my-1" alt="Responsive image">
+                </div>
+                <!-- product name -->
+                <div class="row product color_white my-1">
+                  $ 2.50
+                </div>
+
+                <div class="row product color_white my-1">
+                  Chocolata Croissant<span class="badge badge-pill badge-success mx-1" id="chocolata">0</span>
+                </div>
+                <!-- button -->
+                <div class="row product">
+                  <button onclick="addone('chocolata')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>+</strong></button>
+                  <button onclick="subone('chocolata')" type="button"
+                    class="btn btn-secondary rounded-circle product_button mx-2 my-1"><strong>-</strong></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </body>
+
+<body>
+
+
+
+  <!-- Menu CARD -->
+  <div class="modal fade" id="formBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content menu_size menu_color" style="align-items: center;">
+
+        <!-- Header Kurt-->
+        <button type="button" class="close color_white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+
+        <div class="modal-header menu_color">
+          <img src="Piaggo.jpg" alt="..." class="img-fluid img-thumbnail logo_image">
+
+        </div>
+        <h5 class="modal-title" id="staticBackdropLabel">CAFE PIAGGO</h5>
+        <form>
+          <div class="form-group">
+            <label for="formControlInput1">Insert Email Address Here</label>
+            <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="FormControlSelect1">Total Guests</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Additional Requests</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=320&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FEdmonton&amp;src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23009688&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showNav=0&amp;showTitle=0&amp;showDate=1&amp;showTabs=0"
+            style="border:solid 1px #777" width="480" height="320" frameborder="0" scrolling="no"></iframe>
+        </form>
+      </div>
+    </div>
+  </div> <!-- Form -->
+
+
+
+
+
+
+
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

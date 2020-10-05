@@ -3,7 +3,7 @@ body {
 }
 
 .nav-link {
-    color:#2e1619;
+    color: #2e1619;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -31,14 +31,15 @@ body {
 
 .restaurantName {
     font-size: 130px;
-    color:#2e1619;
+    color: #2e1619;
     font-family: 'Cherry Cream Soda', cursive;
     text-align: center;
 }
 
-.about {
+.about,
+.events {
     background-color: #1f1f1f;
-    height: 700px;
+    height: 650px;
 }
 
 .aboutUs {
@@ -93,7 +94,6 @@ body {
     flex-direction: row;
     align-content: center;
     justify-content: space-evenly
-    
 }
 
 .card-text {
@@ -106,4 +106,28 @@ body {
     padding: 50px;
     text-align: center;
     margin-left: 150px;
+    filter: invert(49%) sepia(73%) saturate(3294%) hue-rotate(163deg) brightness(97%) contrast(101%);
+
+}
+
+.options {
+    display: inline;
+
+    margin: 400px;
+}
+
+.form-group {
+    font-size: 1rem;
+    color: azure;
+}
+
+#button {
+    height: 100px;
+    width: 200px;
+    font-size: 2rem;
+
+}
+
+#color {
+    color: azure;
 }
