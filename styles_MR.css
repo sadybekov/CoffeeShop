@@ -110,21 +110,18 @@ body {
 
 }
 
-.options {
-    display: inline;
 
-    margin: 400px;
-}
 
 .form-group {
     font-size: 1rem;
     color: azure;
 }
 
-#button {
-    height: 100px;
-    width: 200px;
-    font-size: 2rem;
+.optbutton {
+    align-content: space-between;
+    height: 75px;
+    width: 150px;
+    font-size: 1rem;
 
 }
 
